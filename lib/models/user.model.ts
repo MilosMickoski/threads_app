@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     },
-    commmunities: [
+    communities: [
         {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Community"
