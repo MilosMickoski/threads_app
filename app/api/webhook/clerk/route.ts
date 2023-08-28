@@ -34,6 +34,8 @@ type Event = {
   type: EventType;
 };
 
+console.log("WEBHOOK!")
+
 export const POST = async (request: Request) => {
   const payload = await request.json();
   const header = headers();
@@ -207,3 +209,4 @@ export const POST = async (request: Request) => {
     }
   }
 };
+
